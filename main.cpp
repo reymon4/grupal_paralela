@@ -34,7 +34,7 @@ GLuint* pixel_buffer = nullptr;
 double lastTime = 0.0;
 int frameCount = 0;
 
-// Función para calcular el Mandelbrot (usando parámetros broadcasted)
+// Función para calcular el Mandelbrot en CPU
 static void mandelbrotCpu(int rank, int rows_per_process, GLuint* local_pixels) {
     int black = 0x000000;
 
@@ -79,7 +79,7 @@ void renderText(const std::string& text, float x, float y) {
 }
 
 static void loop(int rank, int size, GLuint* local_pixels, int rows_per_process) {
-    glClearColor(0.0f, 0.0f, 0.0f, 0.0f); // Color de fondo negro
+    glClearColor(0.0f, 0.0f, 0.0f, 0.0f);
     frameCount = 0; // Inicializar contador de frames
     lastTime = glfwGetTime(); // Guardar el tiempo inicial
     double fps = 0.0; // Variable para almacenar el FPS más reciente
@@ -121,7 +121,7 @@ static void loop(int rank, int size, GLuint* local_pixels, int rows_per_process)
                 lastTime = currentTime;
             }
 
-            // Renderizar FPS y maxIteration en la parte superior izquierda en cada frame
+
             std::string infoText = fmt::format("FPS: {:.2f}      Max Iterations: {}", fps, params.maxIteration);
             glDisable(GL_TEXTURE_2D);  // Deshabilitar texturas para renderizar solo el texto
             renderText(infoText, -0.9f, 0.9f); // Posicionamos el texto en la parte superior izquierda
@@ -136,7 +136,7 @@ static void init(int rank) {
     // Inicializar GLUT
     int argc = 1;
     char* argv[] = {(char*)"program"};
-    glutInit(&argc, argv);  // Debes inicializar GLUT antes de usar cualquier función de GLUT
+    glutInit(&argc, argv);
 
     if (!glfwInit()) exit(-1);
 
