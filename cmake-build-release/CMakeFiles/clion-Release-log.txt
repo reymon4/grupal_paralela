@@ -1,0 +1,188 @@
+"C:\Program Files\JetBrains\CLion 2024.3.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Release "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2024.3.2/bin/ninja/win/x64/ninja.exe" -DCMAKE_C_COMPILER=CL.exe -DCMAKE_CXX_COMPILER=CL.exe -DCMAKE_PROJECT_TOP_LEVEL_INCLUDES=conan_provider.cmake -G Ninja -S C:\Users\fing.labcom\Downloads\fractal_mpi\fractal_mpi -B C:\Users\fing.labcom\Downloads\fractal_mpi\fractal_mpi\cmake-build-release
+-- The C compiler identification is MSVC 19.41.34120.0
+-- The CXX compiler identification is MSVC 19.41.34120.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- CMake-Conan: first find_package() found. Installing dependencies with Conan
+-- CMake-Conan: Checking if a default profile exists
+C:\Users\fing.labcom\.conan2\profiles\default
+-- CMake-Conan: cmake_system_name=Windows
+-- CMake-Conan: cmake_system_processor=x86_64
+-- CMake-Conan: CMake compiler=MSVC
+-- CMake-Conan: CMake compiler version=19.41.34120.0
+-- CMake-Conan: CMake compiler.runtime=dynamic
+-- CMake-Conan: [settings] compiler=msvc
+-- CMake-Conan: [settings] compiler.version=194
+-- CMake-Conan: [settings] compiler.runtime=dynamic
+-- CMake-Conan: Creating profile C:/Users/fing.labcom/Downloads/fractal_mpi/fractal_mpi/cmake-build-release/conan_host_profile
+-- CMake-Conan: Profile: 
+[settings]
+arch=x86_64
+os=Windows
+compiler=msvc
+compiler.version=194
+compiler.runtime=dynamic
+compiler.cppstd=17
+build_type=Release
+[conf]
+tools.cmake.cmaketoolchain:generator=Ninja
+tools.build:compiler_executables={"c":"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe","cpp":"C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe","rc":"C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe"}
+
+-- CMake-Conan: Installing single configuration Release
+-- CMake-Conan: conan install C:/Users/fing.labcom/Downloads/fractal_mpi/fractal_mpi -of=C:/Users/fing.labcom/Downloads/fractal_mpi/fractal_mpi/cmake-build-release/conan --profile:host=default;--profile:host=C:/Users/fing.labcom/Downloads/fractal_mpi/fractal_mpi/cmake-build-release/conan_host_profile;--profile:build=default;--build=missing
+
+======== Input profiles ========
+Profile host:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=msvc
+compiler.cppstd=17
+compiler.runtime=dynamic
+compiler.runtime_type=Release
+compiler.version=194
+os=Windows
+[conf]
+tools.build:compiler_executables={'c': 'C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe', 'cpp': 'C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.41.34120/bin/Hostx64/x64/cl.exe', 'rc': 'C:/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64/rc.exe'}
+tools.cmake.cmaketoolchain:generator=Ninja
+
+Profile build:
+[settings]
+arch=x86_64
+build_type=Release
+compiler=msvc
+compiler.cppstd=14
+compiler.runtime=dynamic
+compiler.runtime_type=Release
+compiler.version=194
+os=Windows
+
+
+======== Computing dependency graph ========
+Graph root
+    conanfile.py: C:/Users/fing.labcom/Downloads/fractal_mpi/fractal_mpi\conanfile.py
+Requirements
+    fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3 - Cache
+    freeglut/3.4.0#5674e666d6bb21d45e778c6b710a213d - Cache
+    glad/0.1.36#c926453afdd9d5f72cc4ee6a8fff7d73 - Cache
+    glew/2.2.0#7ed80001a1a9686f00ccf4f4680c5f73 - Cache
+    glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8 - Cache
+    glm/1.0.1#94392c53a527f7d830119b84fe80c754 - Cache
+    glu/system#ee50fc2ade0e1c0c8ebb3be3ea60e0f5 - Cache
+    opengl/system#4df6fecde4084386beded3ed0e56e4ea - Cache
+
+======== Computing necessary packages ========
+fmt/11.0.2: Main binary package '85363c8e7e7e43027bf93aac0c394853de6923e0' missing
+fmt/11.0.2: Checking 7 compatible configurations
+fmt/11.0.2: Found compatible package '1cf057972569a3a443d5b36ba81814a72a6467c9': compiler.cppstd=14, compiler.version=193
+glad/0.1.36: Main binary package 'b3227515ce4387019385df4936b6a796edb621e5' missing
+glad/0.1.36: Checking 1 compatible configurations
+glad/0.1.36: Compatible configurations not found in cache, checking servers
+glad/0.1.36: '68c216035891d9ee1ee6a17b044791336d243d9a': compiler.version=193
+glad/0.1.36: Found compatible package '68c216035891d9ee1ee6a17b044791336d243d9a': compiler.version=193
+glfw/3.3.8: Main binary package 'a20a18b280099de604cf556e76b640af7b113a2e' missing
+glfw/3.3.8: Checking 1 compatible configurations
+glfw/3.3.8: Compatible configurations not found in cache, checking servers
+glfw/3.3.8: '297149c43b562095879d245f61d9b2e590276ce7': compiler.version=193
+glfw/3.3.8: Found compatible package '297149c43b562095879d245f61d9b2e590276ce7': compiler.version=193
+freeglut/3.4.0: Main binary package '2ffa08c47939cdb5405d1af42d81f93eab3c345f' missing
+freeglut/3.4.0: Checking 1 compatible configurations
+freeglut/3.4.0: Compatible configurations not found in cache, checking servers
+freeglut/3.4.0: '7a4d0dfd391266f367d69444552921bbba82c3fd': compiler.version=193
+freeglut/3.4.0: Found compatible package '7a4d0dfd391266f367d69444552921bbba82c3fd': compiler.version=193
+glew/2.2.0: Main binary package '68a353969199f2ee71fc136a7f91727b47d412cc' missing
+glew/2.2.0: Checking 1 compatible configurations
+glew/2.2.0: Compatible configurations not found in cache, checking servers
+glew/2.2.0: 'bb9c81224eec59d1d72d5c025be722a58d99a2b9': compiler.version=193
+glew/2.2.0: Found compatible package 'bb9c81224eec59d1d72d5c025be722a58d99a2b9': compiler.version=193
+Requirements
+    fmt/11.0.2#5c7438ef4d5d69ab106a41e460ce11f3:1cf057972569a3a443d5b36ba81814a72a6467c9#31b7061b462822d18f9e1695678dbeff - Cache
+    freeglut/3.4.0#5674e666d6bb21d45e778c6b710a213d:7a4d0dfd391266f367d69444552921bbba82c3fd#5bcdf03b514e69325d470c34c60fc5e1 - Download (conancenter)
+    glad/0.1.36#c926453afdd9d5f72cc4ee6a8fff7d73:68c216035891d9ee1ee6a17b044791336d243d9a#166bbfcdd216b3151522092b94e4b609 - Download (conancenter)
+    glew/2.2.0#7ed80001a1a9686f00ccf4f4680c5f73:bb9c81224eec59d1d72d5c025be722a58d99a2b9#7a538df8f9d88fc7dce7fb3af5d68e78 - Download (conancenter)
+    glfw/3.3.8#d75a15a362a707163bfaabbf4dc993d8:297149c43b562095879d245f61d9b2e590276ce7#54aea5292b6497b47cdfe3c77cc2a295 - Download (conancenter)
+    glm/1.0.1#94392c53a527f7d830119b84fe80c754:da39a3ee5e6b4b0d3255bfef95601890afd80709#2bbcd0ae421fb99e8713dabae8437299 - Cache
+    glu/system#ee50fc2ade0e1c0c8ebb3be3ea60e0f5:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Cache
+    opengl/system#4df6fecde4084386beded3ed0e56e4ea:da39a3ee5e6b4b0d3255bfef95601890afd80709#0ba8627bd47edc3a501e8f0eb9a79e5e - Cache
+
+======== Installing packages ========
+
+-------- Downloading 4 packages --------
+glad/0.1.36: Retrieving package 68c216035891d9ee1ee6a17b044791336d243d9a from remote 'conancenter' 
+glad/0.1.36: Package installed 68c216035891d9ee1ee6a17b044791336d243d9a
+glad/0.1.36: Downloaded package revision 166bbfcdd216b3151522092b94e4b609
+glfw/3.3.8: Retrieving package 297149c43b562095879d245f61d9b2e590276ce7 from remote 'conancenter' 
+glfw/3.3.8: Package installed 297149c43b562095879d245f61d9b2e590276ce7
+glfw/3.3.8: Downloaded package revision 54aea5292b6497b47cdfe3c77cc2a295
+freeglut/3.4.0: Retrieving package 7a4d0dfd391266f367d69444552921bbba82c3fd from remote 'conancenter' 
+freeglut/3.4.0: Package installed 7a4d0dfd391266f367d69444552921bbba82c3fd
+freeglut/3.4.0: Downloaded package revision 5bcdf03b514e69325d470c34c60fc5e1
+glew/2.2.0: Retrieving package bb9c81224eec59d1d72d5c025be722a58d99a2b9 from remote 'conancenter' 
+glew/2.2.0: Package installed bb9c81224eec59d1d72d5c025be722a58d99a2b9
+glew/2.2.0: Downloaded package revision 7a538df8f9d88fc7dce7fb3af5d68e78
+fmt/11.0.2: Already installed! (1 of 8)
+glm/1.0.1: Already installed! (3 of 8)
+opengl/system: Already installed! (4 of 8)
+glu/system: Already installed! (6 of 8)
+WARN: deprecated: Usage of deprecated Conan 1.X features that will be removed in Conan 2.X:
+WARN: deprecated:     'cpp_info.names' used in: glew/2.2.0, fmt/11.0.2, freeglut/3.4.0, glfw/3.3.8
+WARN: deprecated:     'cpp_info.filenames' used in: glew/2.2.0, glfw/3.3.8, opengl/system
+WARN: deprecated:     'cpp_info.build_modules' used in: glfw/3.3.8
+
+======== Finalizing install (deploy, generators) ========
+conanfile.py: Writing generators to C:\Users\fing.labcom\Downloads\fractal_mpi\fractal_mpi\cmake-build-release\conan\build\Release\generators
+conanfile.py: Generator 'CMakeDeps' calling 'generate()'
+conanfile.py: CMakeDeps necessary find_package() and targets for your CMakeLists.txt
+    find_package(glad)
+    find_package(glm)
+    find_package(FreeGLUT)
+    find_package(glew)
+    find_package(glu)
+    find_package(glfw3)
+    find_package(opengl_system)
+    find_package(fmt)
+    target_link_libraries(... glad::glad glm::glm FreeGLUT::freeglut_static GLEW::GLEW glu::glu glfw opengl::opengl fmt::fmt)
+conanfile.py: Calling generate()
+conanfile.py: Generators folder: C:\Users\fing.labcom\Downloads\fractal_mpi\fractal_mpi\cmake-build-release\conan\build\Release\generators
+conanfile.py: CMakeToolchain generated: conan_toolchain.cmake
+conanfile.py: CMakeToolchain: Preset 'conan-release' added to CMakePresets.json.
+    (cmake>=3.23) cmake --preset conan-release
+    (cmake<3.23) cmake <path> -G Ninja -DCMAKE_TOOLCHAIN_FILE=generators\conan_toolchain.cmake  -DCMAKE_POLICY_DEFAULT_CMP0091=NEW -DCMAKE_BUILD_TYPE=Release
+conanfile.py: CMakeToolchain generated: C:\Users\fing.labcom\Downloads\fractal_mpi\fractal_mpi\cmake-build-release\conan\build\Release\generators\CMakePresets.json
+conanfile.py: Generating aggregated env files
+conanfile.py: Generated aggregated env files: ['conanbuild.bat', 'conanrun.bat']
+Install finished successfully
+-- CMake-Conan: CONAN_GENERATORS_FOLDER=C:/Users/fing.labcom/Downloads/fractal_mpi/fractal_mpi/cmake-build-release/conan/build/Release/generators
+-- CMake-Conan: CONANFILE=C:/Users/fing.labcom/Downloads/fractal_mpi/fractal_mpi/conanfile.py
+-- Could NOT find MPI (missing: MPI_DIR)
+-- CMake-Conan: find_package(PkgConfig) found, 'conan install' already ran
+-- Found MPI_C: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impi.lib (found version "3.1")
+-- Found MPI_CXX: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impi.lib (found version "3.1")
+-- Found MPI: TRUE (found version "3.1")
+-- CMake-Conan: find_package(fmt) found, 'conan install' already ran
+-- Conan: Component target declared 'fmt::fmt'
+-- CMake-Conan: find_package(glfw3) found, 'conan install' already ran
+-- Conan: Target declared 'glfw'
+-- CMake-Conan: find_package(opengl_system) found, 'conan install' already ran
+-- Conan: Target declared 'opengl::opengl'
+-- CMake-Conan: find_package(FreeGLUT) found, 'conan install' already ran
+-- Conan: Component target declared 'FreeGLUT::freeglut_static'
+-- CMake-Conan: find_package(glu) found, 'conan install' already ran
+-- Conan: Target declared 'glu::glu'
+-- MPI FOUND
+-- MPI Version: 3.1
+-- MPI Include Path: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include;C:/Program Files (x86)/Intel/oneAPI/mpi/latest/include/mpi
+-- MPI Libraries: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impi.lib;C:/Program Files (x86)/Intel/oneAPI/mpi/latest/lib/impicxx.lib
+-- MPI Compiler: C:/Program Files (x86)/Intel/oneAPI/mpi/latest/bin/mpicl.bat
+-- MPI Link Flags: 
+-- Configuring done (8.3s)
+-- Generating done (0.0s)
+-- Build files have been written to: C:/Users/fing.labcom/Downloads/fractal_mpi/fractal_mpi/cmake-build-release

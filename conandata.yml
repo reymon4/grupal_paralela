@@ -1,0 +1,12 @@
+# This file is managed by Conan, contents will be overwritten.
+# To keep your changes, remove these comment lines, but the plugin won't be able to modify your requirements
+
+requirements:
+  - "glad/0.1.36"
+  - "glu/system"
+  - "glm/1.0.1"
+  - "freeglut/3.4.0"
+  - "glew/2.2.0"
+  - "opengl/system"
+  - "glfw/3.3.8"
+  - "fmt/11.0.2"
